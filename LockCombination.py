@@ -1,10 +1,9 @@
 def LockCombo():
     pin = input("What is your 4 digit password? ")
-    numerics = "0123456789"
-    for item in pin:
-        if (item not in numerics) or (len(pin) != 4):
-            return
-    return pin
+    if len(pin) == 4 and pin.isdigit():
+        return pin
+    else:
+        print("That is not a valid 4 digit pin.")
 
 def PinCracker():
     combo = LockCombo()
@@ -21,5 +20,3 @@ def PinCracker():
                     if guess == combo:
                         print("My guess is " + guess)
                         return
-                    
-PinCracker()
