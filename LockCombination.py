@@ -20,3 +20,5 @@ def PinCracker():
                     if guess == combo:
                         print("My guess is " + guess)
                         return
+LockCombo()
+
