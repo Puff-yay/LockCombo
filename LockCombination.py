@@ -21,5 +21,3 @@ def PinCracker():
                         print("My guess is " + guess)
                         return
 PinCracker()
-
-
